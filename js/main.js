@@ -34,7 +34,6 @@ const initGame = () => {
     cell.innerHTML = "";
   });
   setBoardHoverClass();
-  winningMessage.classList.remove("show");
 };
 
 restartButton.addEventListener("click", initGame);
@@ -72,7 +71,6 @@ const endGame = (draw) => {
       isPlayer_O_Turn ? " kör " : "z X "
     }játékos nyert! Gratulálok!`;
   }
-  winningMessage.classList.add("show");
   cells.forEach((cell) => cell.removeEventListener("click", handleCellClick));
   board.classList.remove(player_X_class);
   board.classList.remove(player_O_class);
