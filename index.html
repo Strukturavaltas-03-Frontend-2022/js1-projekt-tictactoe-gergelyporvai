@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="./assets/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="title">
+        <h1>Tic-Tac-Toe</h1>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="board" id="board">
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+        <div class="cell" data-cell></div>
+      </div>
+
+      <footer class="footer">
+        <button class="btn" id="restartButton">Restart</button>
+        <div class="winning-message" id="winningMessage">
+          <div class="winningMessageText" id="winningMessageText"></div>
+        </div>
+      </footer>
+    </main>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
