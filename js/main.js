@@ -53,6 +53,11 @@ const handleCellClick = (element) => {
     isEnded = true;
   } else if (isDraw()) {
     endGame(true);
+    if (isPlayer_O_Turn === true) {
+      cell.innerHTML = "<i class='fa fa-solid fa-circle-thin'></i>";
+    } else {
+      cell.innerHTML = "<i class='fa fa-solid fa-times'></i>";
+    }
   } else {
     swapTurns();
     setBoardHoverClass(cell);
